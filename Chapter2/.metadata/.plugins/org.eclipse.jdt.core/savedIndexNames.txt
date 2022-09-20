@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+C:\Users\amabdalla\git\CS20Demo\Chapter2\.metadata\.plugins\org.eclipse.jdt.core
+3356803226.index
+253555006.index
+45174764.index
+909427237.index
+1108097636.index
+683747716.index
+1663549204.index
