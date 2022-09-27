@@ -1,3 +1,16 @@
+/*
+
+Program: ConditionalStatements.java          Last Date of this Revision: September 21, 2022
+
+Purpose: 
+
+Author: Your Name, 
+School: CHHS
+Course: Computer Science 20
+ 
+
+*/
+
 import java.util.Scanner;
 
 public class ConditionalStatements 
@@ -32,3 +45,17 @@ public class ConditionalStatements
 	}
 
 }
+/* Screen Dump
+ 
+  What is the secret word? 
+EA
+You've guessed it incorrectly
+
+
+
+  
+  
+ 
+ */
+
+
