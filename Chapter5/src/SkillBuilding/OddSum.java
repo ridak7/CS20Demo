@@ -19,7 +19,7 @@ public class OddSum
 		
 		for(int i = 1; i <= max; i += step)
 		{
-			sum += i;
+			sum += i;//add the sum to i
 		}
 		System.out.print("The sum of the odd numbers from 1 to " + max + " is: " + sum);
 		
