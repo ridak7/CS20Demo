@@ -10,6 +10,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
+import java.awt.Color;
+import java.awt.Font;
 
 public class MetricConversion {
 
@@ -59,10 +63,15 @@ public class MetricConversion {
 		
 		
 		JLabel display = new JLabel("");
+		display.setForeground(Color.BLUE);
+		display.setBackground(Color.YELLOW);
+		display.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 13));
 		display.setBounds(55, 212, 348, 79);
 		panel.add(display);
 		
 		disT = new JTextField();
+		disT.setFont(new Font("Tahoma", Font.BOLD, 11));
+		disT.setBackground(Color.PINK);
 		disT.setBounds(74, 42, 264, 44);
 		panel.add(disT);
 		disT.setColumns(10);
@@ -114,5 +123,42 @@ public class MetricConversion {
 		buttonGroup.add(yards);
 		yards.setBounds(171, 155, 103, 21);
 		panel.add(yards);
+		
+		JComboBox menu = new JComboBox();
+		menu.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent e) 
+			{
+				if(menu.getSelectedItem().equals("Inches to cm"))
+				{
+					
+					String userinput = disT.getText();
+					double userNum = Double.parseDouble(userinput);
+					double answer;
+					
+					answer = userNum * 2.54;
+						
+					display.setText(Double.toString(answer)+"cm");	
+					
+					
+				}
+				else if(menu.getSelectedItem().equals("Feet to cm"))
+				{
+					
+					String userinput = disT.getText();
+					double userNum = Double.parseDouble(userinput);
+					double answer;
+					
+					answer = userNum * 30.48;
+						
+					display.setText(Double.toString(answer)+"cm");	
+					
+					
+				}
+			}
+		});
+		menu.setModel(new DefaultComboBoxModel(new String[] {"Inches to cm", "Feet to cm", "Yards to meters"}));
+		menu.setBounds(305, 103, 212, 21);
+		panel.add(menu);
 	}
 }
