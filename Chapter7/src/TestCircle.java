@@ -4,13 +4,21 @@ public class TestCircle
 
 	public static void main(String[] args) 
 	{
-		Circle c1 = new Circle();
+		Circle circ = new Circle();
+		System.out.println(circ.getRadius());
+		circ.setRadius(3.7);
+		System.out.println(circ.getRadius());
+		System.out.println(circ.area());
 		
-		System.out.println(c1.getRadius());
+		Circle circ2 = new Circle(9.2);
 		
-		c1.setRadius(3.9);
+		System.out.println(circ2.circumference());
+		System.out.println(circ2.equals(circ));
 		
-		System.out.println(c1.getRadius());
+		System.out.println(circ.toString());
+		
+		System.out.println(circ2.toString());
+		
 
 	}
 

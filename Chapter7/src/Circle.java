@@ -6,7 +6,7 @@ public class Circle   //OOP
 	
 	public Circle()//Create the constructor method
 	{
-		radius = 1.1;
+		radius = 1.2;
 	}
 	
 	public Circle(double r)//Overloading the constructor method
