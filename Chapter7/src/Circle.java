@@ -1,7 +1,7 @@
 
 public class Circle   //OOP
 {
-	private double radius;
+	private double radius;//instance variable
 	
 	
 	public Circle()//Create the constructor method
